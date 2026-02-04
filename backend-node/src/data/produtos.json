@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "nome": "Mouse Gamer",
+    "categoria": "Periféricos",
+    "quantidade": 20,
+    "estoque_minimo": 5,
+    "preco": 150
+  },
+  {
+    "id": 7,
+    "nome": "parafuso",
+    "categoria": "fixadores",
+    "quantidade": 2,
+    "estoque_minimo": 5,
+    "preco": 0.15
+  },
+  {
+    "id": 8,
+    "nome": "parafuso",
+    "categoria": "fixadores",
+    "quantidade": 1,
+    "estoque_minimo": 5,
+    "preco": 0.15
+  },
+  {
+    "id": 9,
+    "nome": "parafuso",
+    "categoria": "fixadores",
+    "quantidade": 0,
+    "estoque_minimo": 5,
+    "preco": 0.15
+  },
+  {
+    "id": 10,
+    "nome": "parafuso",
+    "categoria": "fixadores",
+    "quantidade": 0,
+    "estoque_minimo": 5,
+    "preco": 0.15
+  },
+  {
+    "id": 11,
+    "nome": "parafuso",
+    "categoria": "fixadores",
+    "quantidade": 0,
+    "estoque_minimo": 5,
+    "preco": 0.15
+  },
+  {
+    "id": 12,
+    "nome": "computador",
+    "categoria": "eletronicos",
+    "quantidade": 0,
+    "estoque_minimo": 10,
+    "preco": 2500
+  },
+  {
+    "id": 13,
+    "nome": "parafuso chato",
+    "categoria": "fixadores",
+    "quantidade": 11,
+    "estoque_minimo": 10,
+    "preco": 0.16
+  },
+  {
+    "id": 14,
+    "nome": "laptop",
+    "categoria": "eletronicos",
+    "quantidade": 0,
+    "estoque_minimo": 10,
+    "preco": 3000
+  },
+  {
+    "id": 15,
+    "nome": "tv",
+    "categoria": "eletronicos",
+    "quantidade": 0,
+    "estoque_minimo": 10,
+    "preco": 3000
+  },
+  {
+    "id": 16,
+    "nome": "video game",
+    "categoria": "eletronicos",
+    "quantidade": 0,
+    "estoque_minimo": 11,
+    "preco": 3000
+  }
+]

@@ -1,0 +1,457 @@
+[
+  {
+    "id": 1,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:20:57.104Z"
+  },
+  {
+    "id": 2,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:20:57.947Z"
+  },
+  {
+    "id": 3,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:20:58.451Z"
+  },
+  {
+    "id": 4,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:20:58.758Z"
+  },
+  {
+    "id": 5,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:20:59.116Z"
+  },
+  {
+    "id": 6,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:20:59.373Z"
+  },
+  {
+    "id": 7,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:20:59.657Z"
+  },
+  {
+    "id": 8,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:20:59.893Z"
+  },
+  {
+    "id": 9,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:00.648Z"
+  },
+  {
+    "id": 10,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:00.913Z"
+  },
+  {
+    "id": 11,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:01.168Z"
+  },
+  {
+    "id": 12,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:01.501Z"
+  },
+  {
+    "id": 13,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:01.702Z"
+  },
+  {
+    "id": 14,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:01.911Z"
+  },
+  {
+    "id": 15,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:02.183Z"
+  },
+  {
+    "id": 16,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:02.415Z"
+  },
+  {
+    "id": 17,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:02.630Z"
+  },
+  {
+    "id": 18,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:02.846Z"
+  },
+  {
+    "id": 19,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:03.067Z"
+  },
+  {
+    "id": 20,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:03.296Z"
+  },
+  {
+    "id": 21,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:03.497Z"
+  },
+  {
+    "id": 22,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:04.900Z"
+  },
+  {
+    "id": 23,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:05.063Z"
+  },
+  {
+    "id": 24,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:05.340Z"
+  },
+  {
+    "id": 25,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:06.248Z"
+  },
+  {
+    "id": 26,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:06.490Z"
+  },
+  {
+    "id": 27,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:06.705Z"
+  },
+  {
+    "id": 28,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:06.878Z"
+  },
+  {
+    "id": 29,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:07.967Z"
+  },
+  {
+    "id": 30,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:08.236Z"
+  },
+  {
+    "id": 31,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:08.430Z"
+  },
+  {
+    "id": 32,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:08.610Z"
+  },
+  {
+    "id": 33,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:08.791Z"
+  },
+  {
+    "id": 34,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:08.985Z"
+  },
+  {
+    "id": 35,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:09.164Z"
+  },
+  {
+    "id": 36,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:09.361Z"
+  },
+  {
+    "id": 37,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:09.553Z"
+  },
+  {
+    "id": 38,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:09.726Z"
+  },
+  {
+    "id": 39,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:09.984Z"
+  },
+  {
+    "id": 40,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:10.302Z"
+  },
+  {
+    "id": 41,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:11.382Z"
+  },
+  {
+    "id": 42,
+    "produto_id": 2,
+    "tipo": "saida",
+    "quantidade": 1,
+    "data": "2026-01-15T01:21:11.979Z"
+  },
+  {
+    "id": 43,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:13.991Z"
+  },
+  {
+    "id": 44,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:14.801Z"
+  },
+  {
+    "id": 45,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:15.344Z"
+  },
+  {
+    "id": 46,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:15.638Z"
+  },
+  {
+    "id": 47,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:15.896Z"
+  },
+  {
+    "id": 48,
+    "produto_id": 2,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:16.127Z"
+  },
+  {
+    "id": 49,
+    "produto_id": 3,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:18.287Z"
+  },
+  {
+    "id": 50,
+    "produto_id": 3,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:18.524Z"
+  },
+  {
+    "id": 51,
+    "produto_id": 3,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:18.794Z"
+  },
+  {
+    "id": 52,
+    "produto_id": 3,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:19.181Z"
+  },
+  {
+    "id": 53,
+    "produto_id": 3,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:19.452Z"
+  },
+  {
+    "id": 54,
+    "produto_id": 3,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:54:19.984Z"
+  },
+  {
+    "id": 55,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:19.458Z"
+  },
+  {
+    "id": 56,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:19.661Z"
+  },
+  {
+    "id": 57,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:19.857Z"
+  },
+  {
+    "id": 58,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:20.048Z"
+  },
+  {
+    "id": 59,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:20.231Z"
+  },
+  {
+    "id": 60,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:20.407Z"
+  },
+  {
+    "id": 61,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:20.558Z"
+  },
+  {
+    "id": 62,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:20.832Z"
+  },
+  {
+    "id": 63,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:21.020Z"
+  },
+  {
+    "id": 64,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:21.220Z"
+  },
+  {
+    "id": 65,
+    "produto_id": 13,
+    "tipo": "entrada",
+    "quantidade": 1,
+    "data": "2026-01-16T00:55:21.435Z"
+  }
+]

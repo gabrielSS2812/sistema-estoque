@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sistema de Estoque</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- ======================
+       SIDEBAR
+  ====================== -->
+  <aside class="sidebar">
+    <h2>Estoque</h2>
+    <ul>
+      <li data-page="produtos" class="active">📦 Produtos</li>
+      <li data-page="servicos">🛠 Serviços</li>
+      <li data-page="ajuste">⚙ Ajuste de Estoque</li>
+    </ul>
+  </aside>
+
+  <!-- ======================
+       MAIN
+  ====================== -->
+  <div class="main">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+      <input placeholder="Buscar no sistema..." />
+      <div>👤 Usuário</div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+  <!-- ======================
+       ABAS
+  ====================== -->
+ <!-- ======================
+     ABAS
+====================== -->
+<div class="tabs">
+  <button class="tab-btn active" data-tab="consulta">📊 Consulta</button>
+  <button class="tab-btn" data-tab="operacao">🔄 Operação</button>
+  <button class="tab-btn" data-tab="admin">⚙ Administração</button>
+</div>
+
+<!-- ======================
+     CONSULTA
+====================== -->
+<section id="consulta" class="tab-content active">
+  <h2>Consulta de Estoque</h2>
+
+  <input id="busca" placeholder="Buscar produto..." />
+
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Categoria</th>
+        <th>Quantidade</th>
+        <th>Mínimo</th>
+        <th>Status</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaConsulta"></tbody>
+  </table>
+</section>
+
+<!-- ======================
+     OPERAÇÃO
+====================== -->
+<section id="operacao" class="tab-content">
+  <h2>Entrada / Saída</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="listaOperacao"></tbody>
+  </table>
+</section>
+
+<!-- ======================
+     ADMIN
+====================== -->
+<section id="admin" class="tab-content">
+  <h2>Cadastro de Produto</h2>
+
+  <div class="form-produto">
+    <input id="nome" placeholder="Nome" />
+    <input id="categoria" placeholder="Categoria" />
+    <input id="preco" type="number" placeholder="Preço" />
+    <input id="estoque_minimo" type="number" placeholder="Estoque mínimo" />
+    <button id="btnCadastrar">Cadastrar</button>
+  </div>
+
+  <h2>Gerenciar Produtos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Estoque Mín.</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="listaProdutos"></tbody>
+  </table>
+</section>
+
+
+</div>
+
+  </div>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
+
