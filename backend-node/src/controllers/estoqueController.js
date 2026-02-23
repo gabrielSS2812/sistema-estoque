@@ -7,29 +7,36 @@ function listar(req, res) {
 }
 
 function entrada(req, res) {
-  const { id, quantidade } = req.body;
+  const { id, produtoId, quantidade } = req.body;
 
-  if (!id || !quantidade) {
+  const produtoFinalId = id || produtoId;
+
+  if (!produtoFinalId || !quantidade) {
     throw new AppError("ID e quantidade são obrigatórios", 400);
   }
 
-  const produto = produtoService.buscarPorId(Number(id));
+  const produto = produtoService.buscarPorId(Number(produtoFinalId));
 
   produtoService.atualizar(produto.id, {
     quantidade: produto.quantidade + Number(quantidade)
   });
 
-  res.status(200).json({ message: "Entrada registrada" });
+  res.status(200).json({
+    message: "Entrada registrada",
+    data: produto
+  });
 }
 
 function saida(req, res) {
-  const { id, quantidade } = req.body;
+  const { id, produtoId, quantidade } = req.body;
 
-  if (!id || !quantidade) {
+  const produtoFinalId = id || produtoId;
+
+  if (!produtoFinalId || !quantidade) {
     throw new AppError("ID e quantidade são obrigatórios", 400);
   }
 
-  const produto = produtoService.buscarPorId(Number(id));
+  const produto = produtoService.buscarPorId(Number(produtoFinalId));
 
   if (produto.quantidade < quantidade) {
     throw new AppError("Estoque insuficiente", 400);
@@ -39,7 +46,10 @@ function saida(req, res) {
     quantidade: produto.quantidade - Number(quantidade)
   });
 
-  res.status(200).json({ message: "Saída registrada" });
+  res.status(200).json({
+    message: "Saída registrada",
+    data: produto
+  });
 }
 
 function alertas(req, res) {
@@ -57,5 +67,6 @@ module.exports = {
   saida,
   alertas
 };
+
 
 

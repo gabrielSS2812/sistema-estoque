@@ -48,7 +48,7 @@ function aplicarPermissoesUI(usuario) {
 }
 
 /* =========================
-   CONTROLE DE TABS (🔥 FALTAVA ISSO)
+   CONTROLE DE TABS
 ========================= */
 function inicializarTabs() {
   const tabs = document.querySelectorAll(".tab-btn");
@@ -59,10 +59,7 @@ function inicializarTabs() {
       const tabId = btn.dataset.tab;
       const content = document.getElementById(tabId);
 
-      if (!content) {
-        console.error("Tab não encontrada:", tabId);
-        return;
-      }
+      if (!content) return;
 
       tabs.forEach(b => b.classList.remove("active"));
       contents.forEach(c => c.classList.remove("active"));
@@ -74,6 +71,7 @@ function inicializarTabs() {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
+
   const token = localStorage.getItem("token");
 
   if (!token) {
@@ -90,9 +88,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   aplicarPermissoesUI(usuario);
-  inicializarTabs(); // 🔥 ESSENCIAL
+  inicializarTabs();
 
   const lista = document.getElementById("listaProdutos");
+  const btnCadastrar = document.getElementById("btnCadastrar");
 
   /* =========================
      CARREGAR PRODUTOS
@@ -123,14 +122,99 @@ document.addEventListener("DOMContentLoaded", async () => {
       if (usuario.nivel < PERMISSOES.ADMIN) {
         document.querySelectorAll(".salvar, .excluir").forEach(b => b.remove());
       }
+
     } catch (err) {
       console.error(err);
     }
   }
 
   /* =========================
+     EVENTOS DOS BOTÕES
+  ========================= */
+  lista.addEventListener("click", async (e) => {
+    const id = Number(e.target.dataset.id);
+    if (!id) return;
+
+    try {
+
+      // ENTRADA
+      if (e.target.classList.contains("entrada")) {
+        await entradaProduto(id, 1);
+        await carregarProdutos();
+        document.dispatchEvent(new Event("estoqueAtualizado"));
+      }
+
+      // SAÍDA
+      if (e.target.classList.contains("saida")) {
+        await saidaProduto(id, 1);
+        await carregarProdutos();
+        document.dispatchEvent(new Event("estoqueAtualizado"));
+      }
+
+      // SALVAR
+      if (e.target.classList.contains("salvar")) {
+        const tr = e.target.closest("tr");
+
+        const nome = tr.querySelector(".edit-nome").value;
+        const minimo = Number(tr.querySelector(".edit-min").value);
+
+        await atualizarProduto(id, {
+          nome,
+          estoque_minimo: minimo
+        });
+
+        await carregarProdutos();
+        document.dispatchEvent(new Event("estoqueAtualizado"));
+      }
+
+      // EXCLUIR
+      if (e.target.classList.contains("excluir")) {
+        if (!confirm("Deseja excluir este produto?")) return;
+
+        await excluirProduto(id);
+        await carregarProdutos();
+        document.dispatchEvent(new Event("estoqueAtualizado"));
+      }
+
+    } catch (err) {
+      console.error(err);
+      alert(err.message || "Erro na operação");
+    }
+  });
+
+  /* =========================
+     CADASTRO
+  ========================= */
+  btnCadastrar?.addEventListener("click", async () => {
+
+    if (usuario.nivel < PERMISSOES.ADMIN) {
+      return alert("Sem permissão");
+    }
+
+    try {
+      const produto = {
+        nome: nome.value,
+        categoria: categoria.value,
+        preco: Number(preco.value),
+        estoque_minimo: Number(estoque_minimo.value)
+      };
+
+      await criarProduto(produto);
+
+      await carregarProdutos();
+      document.dispatchEvent(new Event("estoqueAtualizado"));
+
+    } catch (err) {
+      console.error(err);
+      alert(err.message);
+    }
+
+  });
+
+  /* =========================
      INIT
   ========================= */
   await carregarProdutos();
   await carregarConsulta();
+
 });

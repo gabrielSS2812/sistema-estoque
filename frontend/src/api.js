@@ -102,3 +102,4 @@ export function saidaProduto(id, quantidade) {
     body: JSON.stringify({ id, quantidade })
   });
 }
+

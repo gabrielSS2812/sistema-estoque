@@ -60,11 +60,16 @@ tabela.addEventListener("click", async (e) => {
       await saidaProduto(id, 1);
     }
 
+    // 🔥 atualiza tudo
     await carregarConsulta();
+
+    document.dispatchEvent(new Event("estoqueAtualizado"));
+
   } catch (err) {
     alert(err.message || "Erro na operação");
   }
 });
+
 
 /* =========================
    BUSCA
@@ -78,6 +83,7 @@ buscaInput.addEventListener("input", () => {
 
   renderTabela(filtrados);
 });
+document.addEventListener("estoqueAtualizado", carregarConsulta);
 
 /* =========================
    INIT
